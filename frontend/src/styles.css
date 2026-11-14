@@ -1,0 +1,67 @@
+:root {
+  --brand: #0f766e;
+  --brand-light: #e6f4f1;
+  --accent: #f59e0b;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --line: #e8eaed;
+  --bg: #f5f7f8;
+  --el-color-primary: #0f766e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title::before {
+  content: "";
+  width: 4px;
+  height: 16px;
+  background: var(--brand);
+  border-radius: 2px;
+}
+
+.muted { color: var(--muted); }
+.price { color: #e5484d; font-weight: 700; }
+.price small { font-size: 12px; font-weight: 500; }
+
+.el-button--primary {
+  --el-button-bg-color: var(--brand);
+  --el-button-border-color: var(--brand);
+  --el-button-hover-bg-color: #12897f;
+  --el-button-hover-border-color: #12897f;
+}
+
+.el-tag--success { --el-tag-bg-color: var(--brand-light); --el-tag-text-color: var(--brand); }
+
+.el-card { border-radius: 14px; }

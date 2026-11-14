@@ -1,0 +1,12 @@
+node_modules/
+target/
+dist/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+backend/uploads/*
+!backend/uploads/p*.jpg
+!backend/uploads/idcard.jpg
+!backend/uploads/license.jpg
